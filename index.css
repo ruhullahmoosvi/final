@@ -1,12 +1,14 @@
 .slick-slide {
-    width: 100%;
-    margin: 0 80px;
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: auto;
 }
 
 .slick-dots {
     list-style-type: none;
     width: 100%;
-    max-width: 200px;
+    max-width: auto;
     text-align: center;
     margin: 0 auto;
 }

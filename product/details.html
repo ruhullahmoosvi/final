@@ -7,18 +7,20 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
     <title>Shopping App</title>
     <script src="https://kit.fontawesome.com/35c398e458.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./base.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="stylesheet" href="../product/details.css" />
 </head>
 <body>
     <header>
         <nav id="topbar">
             <div id="left-menu">
-                <div id="logo"><a href="./index.html"><span>Shop</span>lane</a></div>
-                <a href="#clothing-section">Clothing</a>
-                <a href="#accessory-section">Accessories</a>
+                <div id="logo"><a href="../index.html"><span>Shop</span>lane</a></div>
+                <a href="../index.html#clothing-section">Clothing</a>
+                <a href="../index.html#accessory-section">Accessories</a>
             </div>
             <div id="search-wrapper">
                 <i class="fas fa-search"></i>
@@ -27,33 +29,31 @@
             <div id="right-menu">
                 <div id="cart-wrapper">
                     <p id="cart-count">0</p>
-                    <a href="./checkout.html"><i class="fas fa-shopping-cart"></i></a>
+                    <a href="../checkout.html"><i class="fas fa-shopping-cart"></i></a>
                 </div>
             </div>
         </nav>
     </header>
-    <main>    
+    <main>
         <section>
-            <div class="center">
-                <div><img src="assets/96OnkX7.png" /></div>
-                <div><img src="assets/KtGxwnN.png" /></div>
-                <div><img src="assets/sfjg9R8.png" /></div>
-                <div><img src="assets/p0wdadG.png" /></div>
-                
-            </div>
-        </section>
+            <div class="product-wrapper">
+                <div id="product-image">
+                    <div class="image-wrapper">
+                        <img id="product-preview" src="../assets/default-product.png" />
+                    </div>
+                </div>
+                <div id="product-details">
+                    <h1 id="product-title">Product Title</h1>
+                    <h1 id="product-brand">Product Brand</h1>
+                    <h4 class="section-heading">Price: Rs <p id="product-price">XXXX</p></h4>
+                    <h4 class="section-heading">Description</h4>
+                    <p id="description">Product Description</p>
+                    <h4 class="section-heading">Product Preview</h4>
+                    <div id="product-images">
+                    </div>
 
-        <section id="clothing-section" class="homepage-section">
-            <h3 class="section-heading">Clothing for Men and Women</h3>
-
-            <div id="clothing-grid" class="product-grid">
-            </div>
-        </section>
-
-        <section id="accessory-section" class="homepage-section">
-            <h3 class="section-heading">Accessories for Men and Women</h3>
-
-            <div id="accessory-grid" class="product-grid">
+                    <button id="btn-add-to-cart">Add to Cart</button>
+                </div>
             </div>
         </section>
     </main>
@@ -87,8 +87,7 @@
             <p href="/" class="footer-link">United States</p>
         </div>
     </footer>
-    <script src="./base.js"></script>
-    <script src="./index.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="../base.js"></script>
+    <script src="./details.js"></script>
 </body>
 </html>
